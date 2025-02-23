@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#opener {
+    width: 100%;
+    height: 100vh;
+    background-image: url(library.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 300px;
+    text-align: center;
+    color: antiquewhite;
+    width: 100%;
+    text-align: center;
+    top: 20px;
+    left: 0;
+    z-index: 2000;
+    
+}
+
+#secondpage {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(211, 190, 106);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+
+    
+}
+.small {
+    background-image:url(images.jpeg);
+    width: 500px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    position: absolute;
+    right: 200px;
+    top: 170px;
+ 
+}
+.ravenhead {
+    background-image:url(ravenhead.png);
+    width: 500px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    position: absolute;
+    left: 80px;
+    bottom: -50px;
+}
+
+.speechbubble {
+    background-image:url(speechbubble.png);
+    width: 2100px;
+    height: 2100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: -600px;
+    left: 250px;
+}
+
+h2{
+    position: relative;
+    left: 800px;
+    top: 30px;
+    
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 260;
+    font-style: normal;
+    font-size: 90px;
+}
+
+h3{
+    position: relative;
+    left: 750px;
+    top: 60px;
+    
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 35px;
+
+    max-width: 580px;
+}
+
+h4{
+    position: relative;
+    left: 750px;
+    top: 80px;
+    
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+
+    max-width: 550px;
+    
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 30px; 
+    left: 50%; 
+    width: 60px; 
+    height: 60px;
+    
+    background-image: url(arrow-down.png); 
+    background-size: contain;  
+    background-position: center; 
+
+    
+}
+
+.scroll-down a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+h5{
+    font-size: 60px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 400;
+    text-align: center;
+    color: antiquewhite;
+    width: 100%;
+    text-align: center;
+    top: 20px;
+    left: 0;
+    z-index: 2000;
+}
+
+#thirdpage {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(211, 190, 106);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+  
+}
+
+.livera {
+    background-image:url(livera.jpeg);
+    width: 500px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 300px;
+    bottom: 300px
+}
+
+.evar {
+    background-image:url(evar.jpeg);
+    width: 500px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 300px;
+    bottom: 300px;
+}
+
+h6 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+   
+    text-align: center;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 260;
+    font-style: normal;
+    font-size: 90px;
+}
+
+h7 {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight: 260;
+    font-style: normal;
+    font-size: 40px;
+
+    max-width: 3000px;
+}
+
+h8 {
+    position: absolute;
+    left: 300px;
+    top: 750px;
+    
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight: 260;
+    font-style: normal;
+    font-size: 20px;
+
+    max-width: 500px;
+}  
+
+h9 {
+    position: absolute;
+    right: 300px;
+    top: 750px;
+    
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight: 260;
+    font-style: normal;
+    font-size: 20px;
+
+    max-width: 500px;
+}  
