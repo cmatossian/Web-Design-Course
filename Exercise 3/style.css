@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: brown;
+}
+
+
+/* ------------ POEM SECTION -- */
+
+#poem {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.text p {
+    font-family:'Franklin Gothic Medium'sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 75px;
+    line-height: 2;
+    color: black;
+}
+.bloomed {
+    
+    display: inline-block;
+    background-color:yellow;
+    color:brown;
+    padding: 0 10px 0 10px;
+    margin: 0 10px 0 10px;
+    transition: all 2s;
+    opacity:.5;
+    
+}
+.bloomed:hover {
+    color: yellow;
+    background-color: brown; 
+    cursor:crosshair;
+    opacity: 1;
+    transform:translate(100px,0) scale(1.5,1.5);
+}
+.dark {
+    display: inline-block;
+    background-color: black;
+    color: yellow;
+    padding: 0 10px 0 10px;
+    margin: 0 10px 0 10px;
+    transition: all 2s;
+}
+.dark:hover {
+    background-color:yellow;
+    color:black;
+    cursor: crosshair;
+    transform: rotate(180deg)scale(1.5,1.5);
+}
+.trust {
+    display: inline-block;
+    background-color: orange;
+    padding: 0 10px 0 10px;
+    margin: 0 10px 0 10px;
+    color: black;
+    opacity: .5;
+    transition: all 2s;
+}
+.trust:hover {
+    cursor: crosshair;
+    opacity: 5;
+    transform: rotate(180deg);
+    
+}
+.kendrick {
+    cursor: crosshair;
+    display: inline-block;
+    background-color:purple;
+    color: red;
+    padding: 0 10px 0 10px;
+    margin: 0 10px 0 10px;
+    transition: all 1s;
+}
+.kendrick:hover {
+    opacity: 0;
+    transform: translate(20px,20px) scale(2,2);
+}
+
+/*
+.moon1 {
+width: 400px;
+height: 400px;
+position: absolute;
+top: 0;
+left: 0;
+animation: movemoon 4s 0s infinite alternate;
+}
+
+@keyframes movemoon {
+    0% {top: 0; left: 0; opacity: 1;}
+    50% {top: 500px; left: 0;}
+    100% {top: 500px; left: 900px; opacity: 0.5;}
+}
+
+.moon2 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: spinmoon 5s 1s infinite alternate;
+}
+
+@keyframes spinmoon {
+    0% {
+        bottom: 0;
+        right: 0;
+        transform: rotate(0deg) scale(1,1);
+        opacity: 0.5;
+    }
+    100% {
+        bottom: 500px;
+        right: 500px;
+        transform: rotate(360deg) scale(4,4);
+        opacity: 1;
+    }
+}
+
+.text {
+    position: relative;
+    z-index: 9999;
+}
+
+.moon3 {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: fademoon 10s 3s infinite alternate;
+}
+
+@keyframes fademoon {
+    0% {
+        opacity: 1;
+        transform: scale(1,1);
+    }
+    100% {
+        opacity: 0.2;
+        transform: scale(0.3,0.3);
+    }
+}
