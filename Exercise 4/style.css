@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: grey;
+}
+#orb-one{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation-name: shapeshift;
+    animation-duration: 5s;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes shapeshift {
+    0% {
+        border-radius: 45% 65% 55% 75%;
+
+    }
+    50% {
+        border-radius: 55% 75% 35% 45%;
+
+    }
+    100% {
+        border-radius: 50% 60% 30% 70%;
+
+    }
+}
+
+#orb-two {
+    width: 90%;
+    height: 90vh;
+    background-color: rgba(0, 128, 0, 0.3);
+    border-radius: 50%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 99;
+    animation-name: shapeshift;
+    animation-duration: 10s;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+/*three properties for centering the content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    font-size: 20px;
+    color: white;
+}
+@media screen and (max-width: 1200px) and (min-width: 1001px){
+    body {
+        background-color: rgb(255, 119, 0);
+    }
+    #orb-one {
+        background-color: rgba(137, 43, 226, 0.3);
+        animation-duration: 10s;
+        z-index: 99;
+    }
+    #orb-two {
+        background-color:rgba(127, 255, 212, 0.1);
+        animation-duration: 15s;
+        z-index: 101;
+    }
+    #fall {
+        width: 50vw;
+        height: 50vh;
+        background-image: url(images/fall.jpg);
+        background-size: cover;
+        background-repeat: no-repeat; 
+        background-position: center;
+        position: absolute;
+      
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    
+      
+    }
+}
+@media screen and (max-width: 1000px) and (min-width: 801px){
+    body {
+        background-color: rgb(106, 0, 132);
+    }
+    #orb-one {
+        background-color: rgba(0, 4, 255, 0.3);
+        animation-duration: 10s;
+  
+    }
+    #orb-two {
+        background-color:rgba(0, 255, 238, 0.1);
+        animation-duration: 15s;
+        z-index: 101;
+    }
+    #winter {
+        width: 50vw;
+        height: 50vh;
+        background-image: url(images/winter.jpg);
+        background-size: cover;
+        background-repeat: no-repeat; 
+        background-position: center;
+        position: absolute;
+  
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    
+      
+    }
+}
+
+@media screen and (max-width: 800px){
+    body {
+        background-color: rgb(0, 165, 6);
+    }
+    #orb-one {
+        background-color: rgba(234, 16, 198, 0.3);
+        animation-duration: 10s;
+        z-index: 99;
+    }
+    #orb-two {
+        background-color:rgba(255, 0, 187, 0.1);
+        animation-duration: 15s;
+        z-index: 101;
+    }
+    #spring {
+        width: 50vw;
+        height: 50vh;
+        background-image: url(images/spring.jpg);
+        background-size: cover;
+        background-repeat: no-repeat; 
+        background-position: center;
+        position: absolute;
+   
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    
+      
+    }
+}
+
+
+@media screen and (max-width: 1400px) and (min-width: 1201px){
+    body {
+        background-color: rgb(220, 187, 0);
+    }
+    #orb-one {
+        background-color: rgba(58, 226, 43, 0.3);
+        animation-duration: 10s;
+        z-index: 99;
+    }
+    #orb-two {
+        background-color:rgba(255, 242, 0, 0.1);
+        animation-duration: 15s;
+        z-index: 101;
+    }
+    #summer {
+        width: 50vw;
+        height: 50vh;
+        background-image: url(images/summer.jpg);
+        background-size: cover;
+        background-repeat: no-repeat; 
+        background-position: center;
+        position: absolute;
+        z-index: 95;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    
+      
+    }
+}
