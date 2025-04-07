@@ -1,0 +1,482 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+#title {
+    background-image: url(images/pattern1.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+body {
+    font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.indexpaper {
+    background-image: url(images/paper-03.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centering */
+
+    width: 900px;
+    height: 900px;
+
+    z-index: 0; /* Behind everything else */
+}
+
+
+
+#titlecontainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Changed from center to flex-start */
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding-top: 40px;
+    
+}
+h1 {
+    font-size: 5vw;
+    font-weight: 500;
+    color: rgb(0, 36, 108);
+    z-index: 100;
+}
+h2 {
+    font-size: 2vw;
+    font-weight: 400;
+    color: rgb(0, 36, 108);
+    z-index: 99;
+
+}
+.coffee1 {
+    background-image: url(images/coffee1.png); /* Replace with your actual filename */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 500px;  /* Adjust as needed */
+    height: 350px;
+    margin-top: 20px;
+    z-index: 98;
+
+    animation: slowShake 5s infinite ease-in-out;
+}
+@keyframes slowShake {
+    0%   { transform: translate(0, 0) rotate(0deg); }
+    25%  { transform: translate(-4px, 2px) rotate(-1deg); }
+    50%  { transform: translate(4px, -2px) rotate(1deg); }
+    75%  { transform: translate(-3px, 1px) rotate(-0.5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+  }
+
+.btn {
+    display: flex; /* Apply flexbox to the button */
+    align-items: center; /* Vertically center the text */
+    justify-content: center; /* Horizontally center the text */
+    background-color: rgb(33, 196, 183);
+    border-radius: 20px;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 50px;
+    font-size: 2vw;
+    font-weight: 400;
+    color: rgb(0, 36, 108);
+    text-decoration: none;
+    transition: all 1s;
+    z-index: 1050;
+    position: relative;
+    width: auto; /* Ensure the width is based on content, or set a fixed width */
+}
+
+.btn:hover {
+    background-color: rgb(255, 123, 123);
+    color: rgb(255, 205, 68);
+}
+
+
+/* --- PAGE 1 --- */
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    height: 100vh;
+    }
+    
+
+#page1 {
+    background-image: url(images/pattern2.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+p {
+    color: rgb(93, 40, 103);
+    font-size: 40px;
+    line-height: 1.5;
+    font-weight: 400;
+    position: absolute;
+    top: 30px;   /* Move down */ 
+    max-width: 800px;       /* Limit the horizontal width */
+    margin: 300px auto 0;   /* Push it down + center it */
+    text-align: center;     /* Optional: center-align the text */
+    padding: 0 20px;        /* Padding for mobile safety */
+}
+
+.step-number {
+    font-size: 100px;
+    font-family: "Sour Gummy", sans-serif;
+    font-weight: 600;
+    color: rgb(50, 184, 186);
+    text-align: center; 
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+.drip {
+    background-image: url(images/drip.png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: top center;
+    width: 100%;
+    height: 600px;
+    position: fixed;   
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    
+}
+
+.div1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+    margin-top: 80px;
+    
+    grid-area: 1 / 1 / 2 / 3; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/paper-01.png);  /* Your paper image */
+    background-size: contain;/* or cover depending on look */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+}
+
+.syrup {
+    background-image: url(images/syrup.png);
+    background-repeat: no-repeat;
+    background-size: contain;     /* Or adjust as needed */
+    background-position: bottom right;
+    position: fixed;
+    bottom: -10px;
+    left: 0px;
+    width: 420px;
+    height: 420px;
+    z-index: 999;
+    pointer-events: none;
+
+    animation: slowShake 5s infinite ease-in-out;
+}
+
+.next-btn {
+    position: fixed;
+    bottom: 200px;
+    left: 50%;                      /* Center horizontally */
+    transform: translateX(-50%);    /* Offset half its own width */
+    z-index: 1001;
+    background-color: rgb(255, 183, 0);
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: "Sour gummy", sans-serif;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+
+.next-btn:hover {
+    background-color: rgb(33, 196, 183);
+    color: rgb(248, 160, 19);
+}
+
+
+
+/* Page 2 */
+
+.milk {
+    background-image: url(images/almondmilk.png);
+    background-repeat: no-repeat;
+    background-size: contain;     /* Or adjust as needed */
+    background-position: bottom right;
+    position: fixed;
+    bottom: 40px;
+    left: -40px;
+    width: 400px;
+    height: 400px;
+    z-index: 999;
+    pointer-events: none;
+
+    animation: slowShake 5s infinite ease-in-out;
+}
+
+#page2 {
+    background-image: url(images/pattern3.png);
+    font-family: "Sour Gummy";
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.milk-video {
+    position: fixed;
+    top: 30px;
+    right: 120px;
+    width: 400px;        /* Adjust size as needed */
+    height: 200;
+    z-index: 1000;
+    border-radius: 12px; /* Optional: rounded corners */
+    pointer-events: none; /* Prevent interaction so other things are clickable */
+    background-size: cover;    
+}
+
+
+/* Page 3 */
+
+.creamer {
+    background-image: url(images/creamer.png);
+    background-repeat: no-repeat;
+    background-size: contain;     /* Or adjust as needed */
+    background-position: bottom right;
+    position: fixed;
+    bottom: 10px;
+    right: 40px;
+    width: 450px;
+    height: 450px;
+    z-index: 999;
+    pointer-events: none;
+
+    animation: slowShake 5s infinite ease-in-out;
+}
+
+#page3 {
+    background-image: url(images/pattern4.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* Page 4 Final */
+
+#finaltitle {
+    background-image: url(images/pattern1.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;}
+
+    #finaltitlecontainer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; /* Changed from center to flex-start */
+        flex-direction: column;
+        padding-top: 40px;
+        background-color: rgba(195, 140, 0, 0.1);}
+    
+h8 {
+   font-size: 4vw; /* Adjust size if needed */
+    color:rgb(27, 142, 138);
+    z-index: 99;
+    margin: 10px 0; /* Adds space between the headers */
+        }
+    
+    
+    h3, h4, h5, h6, h2 {
+        font-size: 2vw; /* Adjust size if needed */
+        font-weight: 400;
+        color: rgb(93, 40, 103);
+        z-index: 99;
+        margin: 10px 0; /* Adds space between the headers */
+    }
+    
+    h1{
+        color: rgb(255, 195, 42);
+    }
+    h1 {
+        font-size: 5vw;
+      }
+      
+      h2 {
+        font-size: 2.5vw;
+      }
+      
+      .coffee2 {
+        width: 50vw;
+        max-width: 300px;
+        height: auto;
+      }
+      
+
+    .coffee2 {
+        background-image: url(images/coffee2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom right;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 420px;
+        height: 420px;
+        z-index: 5000;
+        pointer-events: none;
+        max-width: 300px;
+
+        animation: slowShake 5s infinite ease-in-out;
+    }
+    
+/* Media Queries */
+
+@media screen and (max-width: 800px) {
+    h1 {
+      font-size: 7vw;
+    }
+  
+    h2, h3, h4, h5, h6, h8 {
+      font-size: 4vw;
+    }
+  
+    .btn {
+      font-size: 4vw;
+      padding: 8px 16px;
+    }
+  
+    .coffee1,
+    .coffee2,
+    .milk,
+    .creamer,
+    .syrup {
+      width: 60vw;
+      height: auto;
+    }
+  
+    .indexpaper {
+      width: 90vw;
+      height: auto;
+      background-size: cover;
+    }
+  
+    .milk-video {
+      width: 90vw;
+      right: 5%;
+      top: 10px;
+    }
+  
+    .step-number {
+      font-size: 12vw;
+      margin-bottom: 80px;
+    }
+  
+    p {
+      font-size: 24px;
+      margin: 200px auto 0;
+      padding: 0 10px;
+    }
+  
+    .div1 {
+      background-size: cover;
+      height: 50vh;
+      margin-top: 60px;
+    }
+  
+    .next-btn {
+      font-size: 4vw;
+      padding: 8px 16px;
+      bottom: 100px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .parent {
+      display: block;
+      height: auto;
+    }
+  
+    .div1 {
+      height: 300px;
+      background-position: center;
+      padding: 10% 5%;
+    }
+  
+    .milk,
+    .creamer,
+    .syrup,
+    .coffee1,
+    .coffee2 {
+      position: relative;
+      width: 80vw;
+      height: auto;
+      margin: 20px auto;
+    }
+  
+    #titlecontainer,
+    #finaltitlecontainer {
+      padding-top: 20px;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .btn {
+      margin-top: 30px;
+      width: 80%;
+      font-size: 18px;
+      text-align: center;
+    }
+  
+    h1 {
+      font-size: 10vw;
+    }
+  
+    h2, h3 {
+      font-size: 6vw;
+    }
+  
+    .next-btn {
+      font-size: 16px;
+      bottom: 60px;
+    }
+  
+    .milk-video {
+      width: 100%;
+      height: auto;
+      position: relative;
+      top: auto;
+      right: auto;
+      margin-top: 20px;
+    }
+  }
+  
