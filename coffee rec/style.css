@@ -361,64 +361,7 @@ h8 {
     
 /* Media Queries */
 
-@media screen and (max-width: 800px) {
-    h1 {
-      font-size: 7vw;
-    }
-  
-    h2, h3, h4, h5, h6, h8 {
-      font-size: 4vw;
-    }
-  
-    .btn {
-      font-size: 4vw;
-      padding: 8px 16px;
-    }
-  
-    .coffee1,
-    .coffee2,
-    .milk,
-    .creamer,
-    .syrup {
-      width: 60vw;
-      height: auto;
-    }
-  
-    .indexpaper {
-      width: 90vw;
-      height: auto;
-      background-size: cover;
-    }
-  
-    .milk-video {
-      width: 90vw;
-      right: 5%;
-      top: 10px;
-    }
-  
-    .step-number {
-      font-size: 12vw;
-      margin-bottom: 80px;
-    }
-  
-    p {
-      font-size: 24px;
-      margin: 200px auto 0;
-      padding: 0 10px;
-    }
-  
-    .div1 {
-      background-size: cover;
-      height: 50vh;
-      margin-top: 60px;
-    }
-  
-    .next-btn {
-      font-size: 4vw;
-      padding: 8px 16px;
-      bottom: 100px;
-    }
-  }
+
   
   @media screen and (max-width: 600px) {
     .parent {
